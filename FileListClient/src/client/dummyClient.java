@@ -98,9 +98,15 @@ public class dummyClient {
         System.out.println("File "+num+" has been selected. Getting the size information...");
         long size=inst.getFileSize(ip1,port1,num);
         System.out.println("File 2 is "+size+" bytes. Starting to download...");
+        int start=1;
+        for(int i=0;i<size;i-=1000){
 
-		/*inst.getFileData(ip1,port1,0,0,1);
-		inst.getFileData(ip1,port1,1,30,20);
-		inst.getFileData(ip1,port1,1,1,size);*/
+            inst.getFileData(ip1,port1,num,);
+        }
+
+        inst.getFileData(ip1,port1,1,1,100);
+        inst.getFileData(ip1,port1,2,13019,13022);
+        inst.getFileData(ip1,port1,3,1,100);
+
     }
 }
